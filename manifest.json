@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Video Seek Bar",
+    "version": "1.0",
+    "description": "Adds a seek bar to videos.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.instagram.com/*"],
+        "js": ["content.js"],
+        "css": ["content.css"]
+      }
+    ]
+  }
+  

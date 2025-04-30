@@ -1,0 +1,31 @@
+.video-container {
+    position: relative;
+  }
+  
+.video-seek-bar {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.349);
+  border: none;
+  cursor: pointer;
+}  
+  /* Hide the default styling */
+input[type="range"] {
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none; /* Other browsers */
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* WebKit (Safari, Chrome) */
+  width: 5px; /* Example width */
+  height: 5px; /* Example height */
+  border-radius: 50%; /* Make it circular */
+  background-color: #333; /* Example background color */
+  transition: all 0.3s; /* Add transition for smooth effect */
+  box-shadow: -400px 0 0 400px #ffffff;
+}
+input[type="range"]:hover::-webkit-slider-thumb {
+  width: 10px; /* Example larger width */
+  height: 10px; /* Example larger height */
+}
